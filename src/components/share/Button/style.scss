@@ -1,0 +1,50 @@
+@import '@/styles/main.scss';
+
+.button-wr {
+  .button-action {
+    font-size: $text-bd-3;
+    font-weight: 400;
+    padding: $space-2-5 $space-3;
+    border-radius: $border-rad-2;
+    border: none;
+    background-color: $button-bg-yellow;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    .button-content {
+      display: flex;
+      justify-content: center;
+      .button-text {
+        margin: auto;
+        padding-right: 10px;
+        transition-duration: 0.75s;
+      }
+      &::after {
+        content: url(../../../../public/svg/arrow-ico.svg);
+      }
+    }
+    &::before {
+      content: '';
+      background-color: $button-bg-black;
+      width: 10px;
+      height: 10px;
+      border-radius: $border-rad-4;
+      position: absolute;
+      top: 35%;
+      right: 15%;
+      transition-duration: 0.5s;
+      z-index: -1;
+    }
+    &:hover::before {
+      width: 300px;
+      height: 300px;
+      right: -80%;
+      top: -200%;
+    }
+    &:hover {
+      .button-text {
+        color: $text-icon-white;
+      }
+    }
+  }
+}

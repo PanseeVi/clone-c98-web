@@ -1,0 +1,66 @@
+@import '@/styles/main.scss';
+
+.app-info-wr {
+  display: flex;
+  justify-content: space-between;
+  padding: $space-10;
+  border-radius: $border-rad-2;
+
+  .app-info-content {
+    text-align: left;
+    width: 46%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .app-info-text {
+      .info-title {
+        font-size: $text-hd-3;
+        margin-bottom: $space-10;
+      }
+      .info-des {
+        font-size: $text-bd-1;
+      }
+    }
+  }
+  .app-info-img {
+    position: relative;
+    width: 46%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    border-radius: $border-rad-2;
+    .info-bg {
+      position: absolute;
+      z-index: 0;
+      bottom: 0;
+      left: -40%;
+    }
+    .info-img {
+      position: relative;
+      z-index: 1;
+      width: 558px;
+      height: 533px;
+      margin-top: $space-6-5;
+    }
+  }
+  &--black {
+    background-color: $bg-color-dark;
+    color: $text-icon-white;
+    .info-bg {
+      bottom: -10% !important;
+    }
+  }
+  &--yellow {
+    background-color: $bg-color-yellow;
+    .info-bg {
+      background-color: $bg-color-white;
+    }
+  }
+  &--white {
+    background-color: $bg-color-gray2;
+    .info-bg {
+      bottom: -10% !important;
+    }
+  }
+}

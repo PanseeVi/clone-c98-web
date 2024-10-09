@@ -1,0 +1,25 @@
+@import '@/styles/main.scss';
+
+.one-platform-wr {
+  width: 432px;
+  height: 300px;
+  text-align: left;
+  background-color: $bg-color-dark;
+  border-radius: $border-rad-2;
+  color: $text-icon-white;
+  position: relative;
+  overflow: hidden;
+
+  .one-platform-text {
+    position: relative;
+    z-index: 1;
+    font-size: $text-hd-6;
+    padding: $space-10 0 0 $space-6;
+  }
+  .one-platform-video {
+    video {
+      position: absolute;
+      bottom: -5rem;
+    }
+  }
+}

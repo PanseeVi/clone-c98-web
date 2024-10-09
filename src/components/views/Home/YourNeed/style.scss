@@ -1,0 +1,20 @@
+@import '@/styles/main.scss';
+
+.need-wr {
+  .need-title {
+    font-size: $text-hd-2;
+  }
+  .need-content {
+    margin-top: $space-18;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: $space-10;
+    row-gap: $space-10;
+  }
+  .item-1 {
+    width: calc(50% - 1.6rem);
+  }
+  .item-2 {
+    width: calc(50% - 1.6rem);
+  }
+}

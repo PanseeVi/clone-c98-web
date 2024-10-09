@@ -1,0 +1,39 @@
+@import '@/styles/main.scss';
+
+.do-more-wr {
+  padding: 12rem 0;
+  .do-more-content {
+    .do-more-text {
+      font-size: $text-hd-2;
+    }
+  }
+  .do-more-info {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    justify-content: space-between;
+    .more-info-item {
+      text-align: left;
+      padding: 00 $space-16 $space-14;
+      border-radius: $border-rad-2;
+      background-color: $bg-color-gray2;
+      .info-item-text {
+        margin: 0;
+      }
+      .key-ico {
+        &::before {
+          content: url(../../../../../public/svg/key-lock-ico.svg);
+        }
+      }
+      .shield-ico {
+        &::before {
+          content: url(../../../../../public/svg/shield-ico.svg);
+        }
+      }
+      .protect-x-ico {
+        &::before {
+          content: url(../../../../../public/svg/protect-ico.svg);
+        }
+      }
+    }
+  }
+}
