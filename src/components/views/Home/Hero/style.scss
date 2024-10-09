@@ -20,6 +20,7 @@
       justify-content: space-between;
       height: 620px;
       .hero-content {
+        position: relative;
         .hero-content-text {
           font-size: 7.2rem;
         }
@@ -27,10 +28,14 @@
           font-size: 20px;
           font-weight: 400;
           color: $text-icon-secondary;
-          margin: $space-10 0 $space-6;
+          margin: $space-10 0 $space-20;
         }
         .hero-button {
+          position: absolute;
           text-align: center;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 0;
         }
       }
       .info-static {
@@ -44,12 +49,22 @@
           color: $text-icon-white;
           padding: $space-14;
           width: 320px;
+          position: relative;
 
           .static-number {
             font-size: $text-hd-4;
           }
           .static-name {
             font-size: $text-bd-1;
+          }
+          &::after {
+            content: '';
+            height: 30%;
+            width: 2px;
+            position: absolute;
+            right: 0;
+            top: 40%;
+            background-color: $text-icon-sub;
           }
         }
       }
