@@ -1,0 +1,33 @@
+$mobile: 600px;
+$tablet: 768px;
+$normal: 1280px;
+$mac-13: 1440px;
+$fhd: 1920px;
+
+@mixin responsive($canvas) {
+  @if $canvas==mobile {
+    @media only screen and (min-width: $mobile) {
+      @content;
+    }
+  }
+  @if $canvas==tablet {
+    @media only screen and (min-width: $tablet) {
+      @content;
+    }
+  }
+  @if $canvas==normal {
+    @media only screen and (min-width: $normal) {
+      @content;
+    }
+  }
+  @if $canvas==mac-13 {
+    @media only screen and (min-width: $mac-13) {
+      @content;
+    }
+  }
+  @if $canvas==fhd {
+    @media only screen and (min-width: $fhd) {
+      @content;
+    }
+  }
+}

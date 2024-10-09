@@ -1,0 +1,18 @@
+@import '@/styles/main.scss';
+
+.info-app {
+  .info-container {
+    .info-title {
+      text-align: left;
+      font-size: $text-hd-2;
+    }
+    .app-info-list {
+      margin-top: 15rem;
+      .info-wr {
+        position: sticky;
+        height: 100vh;
+        top: 10%;
+      }
+    }
+  }
+}

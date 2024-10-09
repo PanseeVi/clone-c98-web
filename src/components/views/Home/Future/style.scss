@@ -1,0 +1,29 @@
+@import '@/styles/main.scss';
+
+.future-wr {
+  font-size: $text-hd-3;
+  position: relative;
+  height: 130vh;
+  .future-content {
+    position: relative;
+    .future-button {
+      position: absolute;
+      z-index: 1;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  .last-picture {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100vh;
+    .image-future {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

@@ -1,0 +1,83 @@
+@import '@/styles/main.scss';
+
+.header {
+  :global {
+    z-index: 1;
+    position: relative;
+    .header-wr {
+      padding: 1.6rem 0;
+
+      .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 400;
+        .header-logo {
+          height: 2.8rem;
+          width: 11rem;
+        }
+        .header-nav {
+          font-size: $text-bd-2;
+          .menu {
+            display: flex;
+            text-align: center;
+            gap: $space-14;
+
+            .menu-item-container {
+              position: relative;
+
+              .menu-item {
+                &:hover {
+                  color: $text-icon-yellow;
+                  transition-duration: 0.3s;
+                }
+              }
+
+              .menu-child {
+                position: absolute;
+                top: 80%;
+                left: 50%;
+                translate: -50%;
+                display: none;
+                .menu-child-container {
+                  background-color: $bg-color-white;
+                  padding: $space-2 $space-3;
+                  margin-top: $space-2-5;
+                  border-radius: $border-rad-2;
+                  border: 1px solid $bg-color-gray2;
+                  .child-item {
+                    text-align: left;
+                    white-space: nowrap;
+                    padding: $space-3 $space-2;
+                    border-radius: $border-rad-1;
+                    &:hover {
+                      background-color: $bg-color-gray2;
+                    }
+                  }
+                }
+              }
+              &:hover {
+                .menu-child {
+                  display: block;
+                }
+              }
+            }
+          }
+        }
+        .button--dark {
+          background-color: $button-bg-black;
+          color: $text-icon-white;
+          font-size: $text-bd-3;
+          padding: $space-3 $space-6;
+          border: 2px $button-bg-black;
+          border-radius: $border-rad-3;
+          &:hover {
+            background-color: $button-bg-yellow;
+            transition-duration: 0.3s;
+            border-color: $button-bg-yellow;
+          }
+        }
+      }
+    }
+  }
+}

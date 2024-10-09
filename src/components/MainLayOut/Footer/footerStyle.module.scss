@@ -1,0 +1,120 @@
+@import '@/styles/main.scss';
+
+.footer {
+  :global {
+    .footer-wr {
+      padding: 12rem 0;
+      .footer-container {
+        .footer-menu-container {
+          display: flex;
+          justify-content: space-between;
+          border-bottom: 1px solid $bg-color-gray2;
+          .footer-logo {
+            .logo-c98 {
+              width: 12rem;
+              height: 3.2rem;
+            }
+            .social-icon-list {
+              display: flex;
+              gap: $space-10;
+              margin-top: $space-5;
+              justify-content: center;
+              .ico-facebook {
+                &::before {
+                  content: url(../../../../public/svg/facebook.svg);
+                }
+                &:hover::before {
+                  filter: brightness(0) saturate(100%) invert(75%) sepia(62%)
+                    saturate(524%) hue-rotate(1deg) brightness(106%)
+                    contrast(91%);
+                }
+              }
+              .ico-discord {
+                &::before {
+                  content: url(../../../../public/svg/discord.svg);
+                }
+                &:hover::before {
+                  filter: brightness(0) saturate(100%) invert(75%) sepia(62%)
+                    saturate(524%) hue-rotate(1deg) brightness(106%)
+                    contrast(91%);
+                }
+              }
+              .ico-telegram {
+                &::before {
+                  content: url(../../../../public/svg/telegram.svg);
+                }
+                &:hover::before {
+                  filter: brightness(0) saturate(100%) invert(75%) sepia(62%)
+                    saturate(524%) hue-rotate(1deg) brightness(106%)
+                    contrast(91%);
+                }
+              }
+              .ico-google {
+                &::before {
+                  content: url(../../../../public/svg/google.svg);
+                }
+                &:hover::before {
+                  filter: brightness(0) saturate(100%) invert(75%) sepia(62%)
+                    saturate(524%) hue-rotate(1deg) brightness(106%)
+                    contrast(91%);
+                }
+              }
+              .ico-twitter {
+                &::before {
+                  content: url(../../../../public/svg/twitter.svg);
+                }
+                &:hover::before {
+                  filter: brightness(0) saturate(100%) invert(75%) sepia(62%)
+                    saturate(524%) hue-rotate(1deg) brightness(106%)
+                    contrast(91%);
+                }
+              }
+              .ico-chat {
+                &::before {
+                  content: url(../../../../public/svg/Chat.svg);
+                }
+                &:hover::before {
+                  filter: brightness(0) saturate(100%) invert(75%) sepia(62%)
+                    saturate(524%) hue-rotate(1deg) brightness(106%)
+                    contrast(91%);
+                }
+              }
+              .social-icon {
+                align-content: center;
+                width: 28px;
+                height: 28px;
+              }
+            }
+          }
+          .footer-menu {
+            display: flex;
+            padding-bottom: $space-20;
+            .menu-box {
+              font-size: $text-bd-2;
+              width: 32rem;
+
+              .menu-title {
+                font-weight: 600;
+                margin: 0 0 $space-4;
+              }
+              .menu-list {
+                .menu-item {
+                  font-weight: 400;
+                  margin-bottom: $space-3;
+                  &:hover {
+                    color: $text-icon-yellow;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .footer-text {
+          font-weight: 400;
+          color: $text-icon-sub;
+          margin: $space-6 0 0;
+        }
+      }
+    }
+  }
+}

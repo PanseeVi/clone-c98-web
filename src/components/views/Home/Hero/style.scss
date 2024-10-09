@@ -1,0 +1,58 @@
+@import '@/styles/main.scss';
+
+.hero {
+  .hero-wrapper {
+    position: relative;
+    z-index: 0;
+    height: 85rem;
+    video {
+      position: absolute;
+      z-index: -1;
+      top: -20%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .banner-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 620px;
+      .hero-content {
+        .hero-content-text {
+          font-size: 7.2rem;
+        }
+        .hero-content-des {
+          font-size: 20px;
+          font-weight: 400;
+          color: $text-icon-secondary;
+          margin: $space-10 0 $space-6;
+        }
+        .hero-button {
+          text-align: center;
+        }
+      }
+      .info-static {
+        display: flex;
+        border-radius: 25px;
+        background-image: linear-gradient(
+          rgba(0, 0, 0, 0.35),
+          rgba(0, 0, 0, 0.2)
+        );
+        .item-static {
+          color: $text-icon-white;
+          padding: $space-14;
+          width: 320px;
+
+          .static-number {
+            font-size: $text-hd-4;
+          }
+          .static-name {
+            font-size: $text-bd-1;
+          }
+        }
+      }
+    }
+  }
+}
