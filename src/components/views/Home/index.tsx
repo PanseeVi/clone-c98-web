@@ -1,10 +1,10 @@
 import React from 'react'
 import styles from './homePageStyle.module.scss'
-import Hero from '@/components/views/Home/Hero/page'
-import InfoApp from '@/components/views/Home/InfoApp/page'
-import YourNeed from '@/components/views/Home/YourNeed/page'
-import DoMore from '@/components/views/Home/DoMore/page'
-import Future from '@/components/views/Home/Future/page'
+import Hero from '@/components/views/Home/Hero'
+import InfoApp from '@/components/views/Home/InfoApp'
+import YourNeed from '@/components/views/Home/YourNeed'
+import DoMore from '@/components/views/Home/DoMore'
+import Future from '@/components/views/Home/Future'
 
 export default function HomePage() {
   return (

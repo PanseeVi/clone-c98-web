@@ -1,6 +1,6 @@
 import React from 'react'
 import './style.scss'
-import CardAppInfo from '@/components/views/Home/InfoApp/CardAppInfo/page'
+import CardAppInfo from '@/components/views/Home/InfoApp/CardAppInfo'
 import appInfoImg1 from '~/image/Home/app-info-1.png'
 import appInfoImg2 from '~/image/Home/app-info-2.png'
 import appInfoImg3 from '~/image/Home/app-info-3.png'

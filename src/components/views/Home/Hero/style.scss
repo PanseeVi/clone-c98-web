@@ -4,28 +4,30 @@
   .hero-wrapper {
     position: relative;
     z-index: 0;
-    height: 85rem;
-    video {
-      position: absolute;
-      z-index: -1;
-      top: -20%;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+    height: 120vh;
+
     .banner-text {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      height: 620px;
+      height: 90vh;
+
+      video {
+        position: absolute;
+        z-index: -1;
+        top: -20%;
+        left: 0;
+        width: 100vw;
+        height: 120vh;
+        object-fit: cover;
+      }
       .hero-content {
         position: relative;
         .hero-content-text {
           font-size: 7.2rem;
         }
         .hero-content-des {
-          font-size: 20px;
+          font-size: $text-bd-1;
           font-weight: 400;
           color: $text-icon-secondary;
           margin: $space-10 0 $space-20;
@@ -40,7 +42,7 @@
       }
       .info-static {
         display: flex;
-        border-radius: 25px;
+        border-radius: $border-rad-2;
         background-image: linear-gradient(
           rgba(0, 0, 0, 0.35),
           rgba(0, 0, 0, 0.2)
@@ -48,7 +50,7 @@
         .item-static {
           color: $text-icon-white;
           padding: $space-14;
-          width: 320px;
+          width: 32rem;
           position: relative;
 
           .static-number {
@@ -60,7 +62,7 @@
           &::after {
             content: '';
             height: 30%;
-            width: 2px;
+            width: 1px;
             position: absolute;
             right: 0;
             top: 40%;
