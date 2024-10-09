@@ -2,20 +2,20 @@
 
 .one-place-wr {
   position: relative;
-  width: 810px;
-  height: 300px;
+  width: 81rem;
+  height: 30rem;
   background-color: $bg-color-gray2;
   border-radius: $border-rad-2;
   text-align: left;
   .one-place-text {
-    width: 30rem;
+    width: 60%;
     font-size: $text-hd-6;
     padding: $space-10 0 0 $space-6;
   }
   .one-place-img {
     position: absolute;
-    height: 265px;
+    height: 26.5rem;
     bottom: 0;
-    right: 4rem;
+    right: 5%;
   }
 }

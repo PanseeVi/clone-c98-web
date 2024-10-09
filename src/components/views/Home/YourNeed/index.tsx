@@ -1,9 +1,9 @@
 import React from 'react'
 import './style.scss'
-import OneHome from '@/components/views/Home/YourNeed/OneHome/page'
-import OneBrowser from '@/components/views/Home/YourNeed/OneBrowser/page'
-import OnePlace from '@/components/views/Home/YourNeed/OnePlace/page'
-import OnePlatform from '@/components/views/Home/YourNeed/OnePlatform/page'
+import OneHome from '@/components/views/Home/YourNeed/OneHome'
+import OneBrowser from '@/components/views/Home/YourNeed/OneBrowser'
+import OnePlace from '@/components/views/Home/YourNeed/OnePlace'
+import OnePlatform from '@/components/views/Home/YourNeed/OnePlatform'
 
 export default function YourNeed() {
   console.log('need')

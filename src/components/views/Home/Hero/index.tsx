@@ -10,14 +10,13 @@ export default function Hero() {
   return (
     <div className='hero'>
       <div className='hero-wrapper'>
-        <video autoPlay loop muted>
-          <source
-            type='video/mp4'
-            src='https://coin98.s3.ap-southeast-1.amazonaws.com/Currency/Home98Anim/clip-banner.mp4'
-          />
-        </video>
-
         <div className='banner-text container'>
+          <video autoPlay loop muted>
+            <source
+              type='video/mp4'
+              src='https://coin98.s3.ap-southeast-1.amazonaws.com/Currency/Home98Anim/clip-banner.mp4'
+            />
+          </video>
           <div className='hero-content'>
             <div className='hero-content-text'>
               Everyone's Gateway <br /> To The Open Internet
